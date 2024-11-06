@@ -1,0 +1,107 @@
+/*4. Вивчення CSS властивостей:*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 24px;
+  background-color: #cbe9ff;
+  margin: 50px;
+}
+
+.block {
+  border: 2px solid #00108a;
+  padding: 50px;
+  margin: 20px;
+}
+
+.block--position {
+  display: inline-block;
+  text-align: center;
+}
+
+.inline {
+  border: 2px dotted #ec0000;
+  padding: 50px;
+  margin: 20px;
+  text-align: center;
+}
+
+.inline--position {
+  display: block;
+}
+
+/*5. Практика з float та clear:*/
+
+.content {
+  background-color: rgba(123, 171, 230, 0.582);
+  font-size: 24px;
+  margin: 0 50px;
+}
+
+.image {
+  width: 10%;
+  height: auto;
+}
+
+.image--float {
+  float: right;
+}
+
+.image--clear {
+  clear: both;
+}
+
+/*6. Експерименти з overflow:*/
+.container {
+  height: 300px;
+  width: 200px;
+  background-color: #ffea94;
+  margin: 100px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.container--overflow-y {
+  overflow-y: scroll;
+}
+
+.container--overflow-x {
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: pre;
+  background-color: #b0ff8b;
+}
+
+/*7. Позиціонування елементів: sticky vs fixed*/
+.container-position {
+  height: auto;
+  width: 500px;
+  background-color: #ff9494;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.container-position--sticky {
+  position: sticky;
+  top: 0;
+  background-color: #ffcbcb;
+  padding: 10px;
+}
+
+.container-position--fixed {
+  position: fixed;
+  left: 100px;
+  top: 80%;
+  background-color: #ffcbcb;
+  padding: 10px;
+}
